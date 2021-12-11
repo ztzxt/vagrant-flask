@@ -11,3 +11,5 @@
         name:
           - flask
           - gunicorn
+    - name: Run gunicorn
+      command: gunicorn -b 0.0.0.0:8080 --daemon --reload main:app
